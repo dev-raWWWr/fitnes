@@ -1,0 +1,155 @@
+@import "../libs/bourbon/app/assets/stylesheets/bourbon"
+$text_light: #fff
+$text_dark: #656e74
+$main_green: #a2ca28
+$main_red: #fd634e
+
+body
+	font-family: "OpenSansRegular", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+	margin: 0
+a
+	color: $text_light
+
+
+h1
+	font-size: em(40px)
+	text-transform: uppercase
+h2
+	font-family: OpenSansRegular
+	font-size: em(24px)
+h4
+	font-size: em(15px)
+	text-transform: uppercase
+h5
+	font-family: Montserrat-Regular
+	font-size: em(14px)
+	text-transform: uppercase
+	color: $main_red
+//header_begin
+header
+	position: relative
+	overflow: hidden
+	background-image: url("../img/header_bg.jpg")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+.navbar
+	position: relative
+	width: 100%
+	
+	.logo
+		float: left
+		padding-top: 45px
+		padding-left: 50px
+.nav_mnu
+	float: right
+	text-transform: uppercase
+	font-family: Avenir-Demi
+	padding-right: 45px
+	font-size: em(14px)
+	ul
+		li
+			padding: 46px 22px	
+			display: inline-block
+			a
+				color: $text_light
+				&:hover
+					text-shadow: 0 0 10px $main_green , 0 0 10px $main_green
+.title_header
+	width: 30%
+	position: absolute
+	bottom: 20%
+	color: $text_light
+	text-align: right
+	line-height: 1.05
+	h1
+		font-weight: 300
+		font-family: Avenir-Regular
+		>span
+			color: $main_green
+			margin: 0px 0px 0px -10px
+	h4
+		font-weight: 300
+		font-family: OpenSansBold
+		padding-right: 45px
+		letter-spacing: 1.1px
+		>span
+			color: $main_red
+.rotate_block
+	transform: rotate(-1.8deg)
+	height: 80px
+	position: absolute
+	bottom: -35px
+	width: 105%
+	background-color: rgba(253,99,78,0.3)
+//header_end
+//section features begin
+.features
+	background-color: $main_green
+	color: $text_light
+	p,a
+		font-family: proximanova-regular
+		font-size: em(14px)
+	p
+		min-height: 80px
+.row_features
+	padding-top: 80px
+	padding-bottom: 80px
+.features_cont_for_img
+	height: 50px
+//section features end
+//section grid_left_right begin
+.grid_left_right
+	background-color: $main_green
+.row_left_right
+	height: 400px	
+	.small_grid
+		background-color: #fff
+		height: 100%
+		text-align: center
+		h5
+			margin-top: 50px
+			margin-bottom: 0
+		h1
+			font-family: OpenSansLight
+			color: $main_green
+			margin-top: 5px
+
+		p
+			color: $text_dark
+			font-family: OpenSansRegular
+		a	
+			color: $main_green
+			text-decoration: underline
+			font-family: OpenSansRegular
+	.big_grid
+		background-color: red
+		height: 100%
+		padding: 0
+		.bid_grid_image
+			width: 100%
+			height: 100%
+		.count
+			position: absolute
+			z-index: 5	
+			bottom: 47px
+		.counter_active
+			font-family: OpenSansRegular
+			font-size: em(14px)
+			color: $main_red
+			padding-right: 14px
+		.span_counter
+			color: $text_light	
+	.big_right
+		.count
+			right: 51px
+
+
+		
+//section grid_left_right end

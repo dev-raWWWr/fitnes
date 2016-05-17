@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Avenir-Demi";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Avenir-Demi/Avenir-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Demi/Avenir-Demi.woff") format("woff"), url("../fonts/Avenir-Demi/Avenir-Demi.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Avenir-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Avenir-Medium/Avenir-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Medium/Avenir-Medium.woff") format("woff"), url("../fonts/Avenir-Medium/Avenir-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Avenir-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Avenir-Regular/Avenir-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir-Regular/Avenir-Regular.woff") format("woff"), url("../fonts/Avenir-Regular/Avenir-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Montserrat-Regular/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular/Montserrat-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansBold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"), url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "proximanova-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/proximanova-regular/proximanova-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-regular/proximanova-regular.woff") format("woff"), url("../fonts/proximanova-regular/proximanova-regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OpenSansLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"), url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "proximanova-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/proximanova-semibold/proximanova-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova-semibold/proximanova-semibold.woff") format("woff"), url("../fonts/proximanova-semibold/proximanova-semibold.ttf") format("truetype"); }
