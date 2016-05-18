@@ -97,7 +97,8 @@ header
 		font-family: proximanova-regular
 		font-size: em(14px)
 	p
-		min-height: 80px
+		min-height: 130px
+		line-height: 26px
 .row_features
 	padding-top: 80px
 	padding-bottom: 80px
@@ -109,47 +110,124 @@ header
 	background-color: $main_green
 .row_left_right
 	height: 400px	
-	.small_grid
-		background-color: #fff
-		height: 100%
-		text-align: center
-		h5
-			margin-top: 50px
-			margin-bottom: 0
-		h1
-			font-family: OpenSansLight
-			color: $main_green
-			margin-top: 5px
+.small_grid, .big_grid_left_text
+	background-color: #fff
+	height: 100%
+	text-align: center
+	z-index: 30
+	padding: 0
+	h5
+		margin-top: 50px
+		margin-bottom: 0
+	h1
+		font-family: OpenSansLight
+		color: $main_green
+		margin-top: 5px
+		font-weight: normal
+	p
+		color: $text_dark
+		font-family: OpenSansRegular
+		line-height: 26px
+	a	
+		color: $main_green
+		text-decoration: underline
+		font-family: OpenSansRegular
+		z-index: 300
+.shadow
+	width: 100%
+	height: 100%
+	z-index: -1
+	top: 0
+	left: 0
+	position: absolute
 
-		p
-			color: $text_dark
-			font-family: OpenSansRegular
-		a	
-			color: $main_green
-			text-decoration: underline
-			font-family: OpenSansRegular
-	.big_grid
-		background-color: red
-		height: 100%
-		padding: 0
-		.bid_grid_image
-			width: 100%
-			height: 100%
-		.count
-			position: absolute
-			z-index: 5	
-			bottom: 47px
-		.counter_active
-			font-family: OpenSansRegular
-			font-size: em(14px)
-			color: $main_red
-			padding-right: 14px
-		.span_counter
-			color: $text_light	
-	.big_right
-		.count
-			right: 51px
+.big_grid,.small_grid,.big_grid_left_text
+	&:hover
+		.shadow
+			transition: all 0.2s ease-out 
+			box-shadow: 0 0 70px rgba(0,0,0,0.4) ,inset 0 0 100px rgba(0,0,0,0.4)
+.bid_grid_image
+	width: 100%
+	height: 100%
+	z-index: -30
+.small_grid_wth_img
+	.shadow
+		z-index: 20
+.big_grid
+	height: 100%
+	padding: 0
+	z-index: 30
+	.shadow
+		z-index: 20
+	.count
+		position: absolute
+		bottom: 47px
+		z-index: 50
+	.counter_active
+		font-family: OpenSansRegular
+		font-size: em(14px)
+		color: $main_red
+		padding-right: 14px
+	.span_counter
+		color: $text_light	
+	h1
+		color: $text_light
+		font-family: "OpenSansLight"
+		font-size: em(40px)
+		font-weight: 400
+		text-transform: uppercase
+		padding-top: 4%
+		padding-left: 7%
+		padding-right: 6%
+	p
+		padding-left: 7%
+		font-family: OpenSansRegular
+		font-size: em(14px)
+		color: $text_light
+		padding-right: 6%
+		line-height: 26px
 
-
-		
+.big_green,.small_grid_text_green
+	background-color: $main_green
+.small_grid_text_green
+	h5,	h1,	p 
+		color: $text_light
+		font-weight: normal
+.big_right
+	.count
+		right: 51px
+.big_left
+	.count
+		left: 51px
 //section grid_left_right end
+//section grid_random begin
+.grid_random
+	background-color: $main_red
+.row_random_grid
+	height: 310px
+.small_grid_left_text, .big_grid_left_text
+	text-align: left
+	padding: 0 40px
+	img
+		position: absolute
+		right: 30px
+		top: 48px
+.grid_left_span, .grid_right_span
+	position: absolute
+	top: 63px
+	span
+		color: $text_light
+		font-family: Montserrat-Regular
+		font-size: em(14px)
+		font-weight: 400
+		text-transform: uppercase
+	img
+		padding-left: 12px
+.grid_left_span
+	left: 60px
+.grid_right_span
+	right: 60px
+.big_grid_left_text
+	.shadow
+		z-index: 20
+//section grid_random end

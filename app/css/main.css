@@ -97,7 +97,8 @@ header {
     font-family: proximanova-regular;
     font-size: 0.875em; }
   .features p {
-    min-height: 80px; }
+    min-height: 130px;
+    line-height: 26px; }
 
 .row_features {
   padding-top: 80px;
@@ -111,41 +112,131 @@ header {
 
 .row_left_right {
   height: 400px; }
-  .row_left_right .small_grid {
-    background-color: #fff;
-    height: 100%;
-    text-align: center; }
-    .row_left_right .small_grid h5 {
-      margin-top: 50px;
-      margin-bottom: 0; }
-    .row_left_right .small_grid h1 {
-      font-family: OpenSansLight;
-      color: #a2ca28;
-      margin-top: 5px; }
-    .row_left_right .small_grid p {
-      color: #656e74;
-      font-family: OpenSansRegular; }
-    .row_left_right .small_grid a {
-      color: #a2ca28;
-      text-decoration: underline;
-      font-family: OpenSansRegular; }
-  .row_left_right .big_grid {
-    background-color: red;
-    height: 100%;
-    padding: 0; }
-    .row_left_right .big_grid .bid_grid_image {
-      width: 100%;
-      height: 100%; }
-    .row_left_right .big_grid .count {
-      position: absolute;
-      z-index: 5;
-      bottom: 47px; }
-    .row_left_right .big_grid .counter_active {
-      font-family: OpenSansRegular;
-      font-size: 0.875em;
-      color: #fd634e;
-      padding-right: 14px; }
-    .row_left_right .big_grid .span_counter {
-      color: #fff; }
-  .row_left_right .big_right .count {
-    right: 51px; }
+
+.small_grid, .big_grid_left_text {
+  background-color: #fff;
+  height: 100%;
+  text-align: center;
+  z-index: 30;
+  padding: 0; }
+  .small_grid h5, .big_grid_left_text h5 {
+    margin-top: 50px;
+    margin-bottom: 0; }
+  .small_grid h1, .big_grid_left_text h1 {
+    font-family: OpenSansLight;
+    color: #a2ca28;
+    margin-top: 5px;
+    font-weight: normal; }
+  .small_grid p, .big_grid_left_text p {
+    color: #656e74;
+    font-family: OpenSansRegular;
+    line-height: 26px; }
+  .small_grid a, .big_grid_left_text a {
+    color: #a2ca28;
+    text-decoration: underline;
+    font-family: OpenSansRegular;
+    z-index: 300; }
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  position: absolute; }
+
+.big_grid:hover .shadow, .small_grid:hover .shadow, .big_grid_left_text:hover .shadow {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-box-shadow: 0 0 70px rgba(0, 0, 0, 0.4), inset 0 0 100px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 70px rgba(0, 0, 0, 0.4), inset 0 0 100px rgba(0, 0, 0, 0.4); }
+
+.bid_grid_image {
+  width: 100%;
+  height: 100%;
+  z-index: -30; }
+
+.small_grid_wth_img .shadow {
+  z-index: 20; }
+
+.big_grid {
+  height: 100%;
+  padding: 0;
+  z-index: 30; }
+  .big_grid .shadow {
+    z-index: 20; }
+  .big_grid .count {
+    position: absolute;
+    bottom: 47px;
+    z-index: 50; }
+  .big_grid .counter_active {
+    font-family: OpenSansRegular;
+    font-size: 0.875em;
+    color: #fd634e;
+    padding-right: 14px; }
+  .big_grid .span_counter {
+    color: #fff; }
+  .big_grid h1 {
+    color: #fff;
+    font-family: "OpenSansLight";
+    font-size: 2.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 4%;
+    padding-left: 7%;
+    padding-right: 6%; }
+  .big_grid p {
+    padding-left: 7%;
+    font-family: OpenSansRegular;
+    font-size: 0.875em;
+    color: #fff;
+    padding-right: 6%;
+    line-height: 26px; }
+
+.big_green, .small_grid_text_green {
+  background-color: #a2ca28; }
+
+.small_grid_text_green h5, .small_grid_text_green h1, .small_grid_text_green p {
+  color: #fff;
+  font-weight: normal; }
+
+.big_right .count {
+  right: 51px; }
+
+.big_left .count {
+  left: 51px; }
+
+.grid_random {
+  background-color: #fd634e; }
+
+.row_random_grid {
+  height: 310px; }
+
+.small_grid_left_text, .big_grid_left_text {
+  text-align: left;
+  padding: 0 40px; }
+  .small_grid_left_text img, .big_grid_left_text img {
+    position: absolute;
+    right: 30px;
+    top: 48px; }
+
+.grid_left_span, .grid_right_span {
+  position: absolute;
+  top: 63px; }
+  .grid_left_span span, .grid_right_span span {
+    color: #fff;
+    font-family: Montserrat-Regular;
+    font-size: 0.875em;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .grid_left_span img, .grid_right_span img {
+    padding-left: 12px; }
+
+.grid_left_span {
+  left: 60px; }
+
+.grid_right_span {
+  right: 60px; }
+
+.big_grid_left_text .shadow {
+  z-index: 20; }
